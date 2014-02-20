@@ -1,0 +1,34 @@
+src/*.exe
+src/unitecoin
+src/unitecoind
+src/test_unitecoin
+.*.swp
+*.*~*
+*.bak
+*.rej
+*.orig
+*.o
+*.patch
+.unitecoin
+
+# Compilation and Qt preprocessor part
+*.qm
+Makefile
+unitecoin-qt
+Unitecoin-Qt.app
+
+# Unit-tests
+Makefile.test
+unitecoin-qt_test
+
+# Resources cpp
+qrc_*.cpp
+
+# Qt creator
+*.pro.user
+
+# Mac specific
+.DS_Store
+build
+
+!src/leveldb-*/Makefile

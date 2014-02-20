@@ -1,7 +1,7 @@
-Litecoin 1.0 BETA
+Unitecoin 1.0.1.x BETA
 
-Copyright (c) 2009-2012 Bitcoin Developers
-Copyright (c) 2011-2012 Litecoin Developers
+Copyright (c) 2009-2013 Bitcoin Developers
+Copyright (c) 2011-2013 Litecoin Developers
 Copyright (c) 2013-2014 Unitecoin Developers
 Distributed under the MIT/X11 software license, see the accompanying
 file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -20,18 +20,10 @@ with each other, with the help of a P2P network to check for double-spending.
 
 Setup
 -----
-Unpack the files into a directory and run unitecoin-qt.exe or unitecoin.exe.
+Unpack the files into a directory and run unitecoin-qt.exe.
 
-If you have Microsoft Security Essentials, you need to add unitecoin-qt.exe, unitecoind.exe and/or unitecoin.exe to its
-"Excluded processes" list.  Microsoft Security Essentials->Settings tab,
-select Excluded processes, press Add, select unitecoin-qt.exe, unitecoind.exe and/or unitecoin.exe, OK, Save changes.
+Unitecoin-Qt is the original Unitecoin client and it builds the backbone of the network.
+However, it downloads and stores the entire history of Unitecoin transactions;
+depending on the speed of your computer and network connection, the synchronization
+process can take anywhere from a few hours to a day or more.
 
-The software automatically finds other nodes to connect to.  You can
-enable Universal Plug and Play using a menu entry or set your firewall
-to forward port 7677 (TCP) to your computer so you can receive
-incoming connections.  Unitecoin works without incoming connections,
-but allowing incoming connections helps the Litecoin network.
-
-See the unitecoin wiki at:
-  http://wiki.unitecoin.info/
-for more help and information.

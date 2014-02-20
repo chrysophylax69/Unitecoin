@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RSSPage</class>
+ <widget class="QDialog" name="RSSPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>426</width>
+    <height>534</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Unitecoin RSS Feed</string>
+  </property>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

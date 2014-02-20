@@ -2,17 +2,17 @@
 # -*- mode: makefile; coding: utf-8 -*-
 
 #DEB_MAKE_CHECK_TARGET = test_bitcoin
-#build/bitcoind::
+#build/unitecoind::
 #	$(if $(filter nocheck,$(DEB_BUILD_OPTIONS)),,src/test_bitcoin)
 
-DEB_INSTALL_EXAMPLES_bitcoind += debian/examples/*
-DEB_INSTALL_MANPAGES_bitcoind += debian/manpages/*
+DEB_INSTALL_EXAMPLES_unitecoind += debian/examples/*
+DEB_INSTALL_MANPAGES_unitecoind += debian/manpages/*
 
 %:
 	dh --with bash-completion $@
 
 override_dh_auto_build:
-	cd src; $(MAKE) -f makefile.unix bitcoind
+	cd src; $(MAKE) -f makefile.unix unitecoind
 	$(MAKE)
 
 override_dh_auto_clean:
@@ -20,14 +20,14 @@ override_dh_auto_clean:
 	cd src; $(MAKE) -f makefile.unix clean
 
 override_dh_auto_configure:
-	qmake bitcoin-qt.pro USE_QRCODE=1
+	qmake unitecoin-qt.pro USE_QRCODE=1
 
 override_dh_auto_test:
-	cd src; $(MAKE) -f makefile.unix test_bitcoin
+	cd src; $(MAKE) -f makefile.unix test_unitecoin
 	src/test_bitcoin
 
 # Ensure wrapper is set executable
-binary-post-install/bitcoind:
-	chmod +x $(cdbs_curdestdir)usr/bin/bitcoind
-binary-post-install/bitcoin-qt:
-	chmod +x $(cdbs_curdestdir)usr/bin/bitcoin-qt
+binary-post-install/unitecoind:
+	chmod +x $(cdbs_curdestdir)usr/bin/unitecoind
+binary-post-install/unitecoin-qt:
+	chmod +x $(cdbs_curdestdir)usr/bin/unitecoin-qt

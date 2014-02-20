@@ -1,9 +1,9 @@
-Building UniteCoin
+Building Unitecoin
 
-See doc/readme-qt.rst for instructions on building unitecoin-qt,
+See doc/readme-qt.rst for instructions on building Unitecoin-Qt,
 the intended-for-end-users, nice-graphical-interface, reference
-implementation of UniteCoin.
+implementation of Litecoin.
 
-See doc/build-*.txt for instructions on building unitecoin,
+See doc/build-*.txt for instructions on building unitecoind,
 the intended-for-services, no-graphical-interface, reference
-implementation of UniteCoin.
+implementation of Unitecoin.
